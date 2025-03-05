@@ -14,20 +14,33 @@
         font-weight: 100px;
        }
        nav{
-
-        height: 50px;
+     
+        height: 60px;
         border: solid black;
         display: flex;
-        justify-content: space-around;
+        justify-content:space-around;
         align-items: center;
         background-color: rgb(0, 0, 0);
         border-radius: 16px;
-        padding: 15px;
+        padding: 20px;
         /* flex-direction: row-reverse; */
+       }
+       body{
+        background-color: aliceblue;
        }
        .a-page{
         display: flex;
-        gap: 30px;
+        justify-content:space-between;
+        gap: 0px;
+       }
+       .header-loging-and-sign-up{
+       
+        display: flex;
+        position: relative;
+        gap: 25px;
+       
+        justify-content:space-between;
+        align-items: center;
        }
      .box{
         width: 800px;
@@ -37,7 +50,7 @@
         position: relative;
         top: 30px;
         
-        background-color: rgba(178, 199, 183, 0.064);
+        background-color: rgba(21, 125, 45, 0.152);
         flex-wrap: wrap;
         border: none;
      }
@@ -147,7 +160,10 @@ form #username::after{
          <a href="">About</a>
          <a href="">Blog</a>
         </div>
-         <a href="">Loging</a>
+        <div class="header-loging-and-sign-up">
+            <a href="">Loging</a>
+            <a href="">Sign in</a>
+        </div>
          
      </nav>
    </header>
