@@ -9,11 +9,12 @@
        
         text-decoration: none;
         gap: 30px;
-        color: #c0e3d7b4;
+        color: #fbfcfbb4;
         font-size: 20px;
         font-weight: 100px;
        }
        nav{
+
         height: 50px;
         border: solid black;
         display: flex;
@@ -29,14 +30,14 @@
         gap: 30px;
        }
      .box{
-        width: 700px;
+        width: 800px;
         height: 500px;
         border: solid black;
         border-radius: 16px;
         position: relative;
         top: 30px;
-        background-color: azure;
-       
+        background-color: rgba(104, 196, 124, 0.693);
+        flex-wrap: wrap;
      }
     form{
         
@@ -44,14 +45,93 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
-        top: 20%;
+        top: 0%;
         align-items: center;
+        
        
     }
-    .main{
-        display:flex;
+    main{
+       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      
+        
+        padding: 35px;
+        /* flex-direction: row-reverse; */
+       }
+       .a-page{
+        display: flex;
+        gap: 30px;
         
     }
+    .username{
+        
+        width: 340px;
+        padding: 20px ;
+        /* border-radius: 18px; */
+        margin-bottom: 9px;
+        border-radius: 14px;
+        border: none;
+        font-size:larger;
+       
+    }
+    #email{
+        height: 10px;
+        width: 300px;
+        padding: 20px;
+        /* border-radius: 18px; */
+        margin-bottom: 9px;
+      
+    }
+    #password{
+        height: 10px;
+        width: 300px;
+        padding: 20px;
+        /* border-radius: 18px; */
+        margin-bottom: 9px;
+    }
+    #conform-password{
+        height: 10px;
+        width: 300px;
+        padding: 20px;
+        /* border-radius: 18px; */
+        margin-bottom:20px;
+    }
+  form #email:hover{
+    background-color: aqua;
+  }
+  form #password:hover{
+    background-color: aqua;
+  }
+  form #conform-password:hover{
+    background-color: aqua;
+  }
+  form h3{
+    font-size:30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+form #username::after{
+        /* content:url(assets/R.png); */
+    }
+    button{
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        height: 10px;
+        width: 130px;
+        padding: 25px;
+        border-radius: 18px;
+        margin-bottom: 5px;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+        background-color: rgba(223, 216, 18, 0.894);
+    }
+    
     </style>
 </head>
 <body>
@@ -71,11 +151,12 @@
     <section class=" box login-page">
        <form>
         <h3>Create you first Loging Acount</h3>
-            <input type="text" name="" id="">
-            <hr>
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
+            <input class="username" type="button" name="" id="" value="Continue with Google">
+            <p> OR</p>
+            <input placeholder="Email address" type="email" name="" id="email">
+            <input placeholder="Password" type="password" name="" id="password">
+            <input placeholder="conform-password" type="password" name="" id="conform-password">
+            <button>SIGN UP</button>
            
        </form> 
     </section>
