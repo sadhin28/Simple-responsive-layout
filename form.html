@@ -66,7 +66,7 @@
         
     }
     .username{
-        
+        cursor: pointer;
         width: 340px;
         padding: 20px ;
         /* border-radius: 18px; */
@@ -76,6 +76,7 @@
         font-size:larger;
        
     }
+    
     #email{
         height: 10px;
         width: 300px;
@@ -129,7 +130,8 @@ form #username::after{
         justify-content: center;
         flex-direction: column;
         border: none;
-        background-color: rgba(223, 216, 18, 0.894);
+        background-color: rgba(233, 199, 7, 0.975);
+        cursor: pointer;
     }
     
     </style>
@@ -150,8 +152,8 @@ form #username::after{
    <main>
     <section class=" box login-page">
        <form>
-        <h3>Create you first Loging Acount</h3>
-            <input class="username" type="button" name="" id="" value="Continue with Google">
+        <h3>Create your first Acount.</h3>
+            <a href=""> <input class="username" type="button" name="" id="" value="Continue with Google"></a>
             <p> OR</p>
             <input placeholder="Email address" type="email" name="" id="email">
             <input placeholder="Password" type="password" name="" id="password">
