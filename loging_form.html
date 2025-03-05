@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin-Form</title>
+    <title>Login-form</title>
     <style>
        nav a{
        
@@ -60,7 +60,7 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
-        top: 0%;
+        top: 10%;
         align-items: center;
         
        
@@ -80,24 +80,13 @@
         gap: 30px;
         
     }
-    .username{
-        cursor: pointer;
-        width: 340px;
-        padding: 20px ;
-        /* border-radius: 18px; */
-        margin-bottom: 9px;
-        border-radius: 14px;
-        border: none;
-        font-size:larger;
-       
-    }
     
     #email{
         height: 10px;
         width: 300px;
         padding: 20px;
         /* border-radius: 18px; */
-        margin-bottom: 9px;
+        margin-bottom: 20px;
       
     }
     #password{
@@ -105,15 +94,9 @@
         width: 300px;
         padding: 20px;
         /* border-radius: 18px; */
-        margin-bottom: 9px;
+        margin-bottom: 20px;
     }
-    #conform-password{
-        height: 10px;
-        width: 300px;
-        padding: 20px;
-        /* border-radius: 18px; */
-        margin-bottom:20px;
-    }
+   
   form #email:hover{
     background-color: aqua;
   }
@@ -161,8 +144,8 @@ form #username::after{
          <a href="">Blog</a>
         </div>
         <div class="header-loging-and-sign-up">
-            <a href="loging_form.html">Loging</a>
-            <a href="">Sign in</a>
+            <a href="form.html">Log-out</a>
+           
         </div>
          
      </nav>
@@ -170,13 +153,12 @@ form #username::after{
    <main>
     <section class=" box login-page">
        <form>
-        <h3>Create your first Acount.</h3>
-            <a href=""> <input class="username" type="button" name="" id="" value="Continue with Google"></a>
-            <p> OR</p>
+        <h3>Log-in</h3>
+           
             <input placeholder="Email address" type="email" name="" id="email">
             <input placeholder="Password" type="password" name="" id="password">
-            <input placeholder="conform-password" type="password" name="" id="conform-password">
-            <button>SIGN UP</button>
+           
+            <button>Login</button>
            
        </form> 
     </section>
