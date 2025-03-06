@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin-Form</title>
+    <style>
+       nav a{
+       
+        text-decoration: none;
+        gap: 30px;
+        color: #fbfcfbb4;
+        font-size: 20px;
+        font-weight: 100px;
+       }
+       nav{
+     
+        height: 60px;
+        border: solid black;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        border-radius: 16px;
+        padding: 20px;
+        /* flex-direction: row-reverse; */
+       }
+       body{
+        background-color: aliceblue;
+       }
+       .a-page{
+        display: flex;
+        justify-content:space-between;
+        gap: 0px;
+       }
+       .header-loging-and-sign-up{
+       
+        display: flex;
+        position: relative;
+        gap: 25px;
+       
+        justify-content:space-between;
+        align-items: center;
+       }
+     .box{
+        width: 800px;
+        height: 500px;
+        border: solid black;
+        border-radius: 16px;
+        position: relative;
+        top: 30px;
+        
+        background-color: rgba(21, 125, 45, 0.152);
+        flex-wrap: wrap;
+        border: none;
+     }
+    .calender-container{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: 0%;
+        align-items: center;
+        
+       
+    }
+    main{
+       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      
+        
+        padding: 35px;
+        /* flex-direction: row-reverse; */
+       }
+       .a-page{
+        display: flex;
+        gap: 30px;
+        
+    }
+    .username{
+        cursor: pointer;
+        width: 340px;
+        padding: 20px ;
+        /* border-radius: 18px; */
+        margin-bottom: 9px;
+        border-radius: 14px;
+        border: none;
+        font-size:larger;
+       
+    }
+    
+    #email{
+        height: 10px;
+        width: 300px;
+        padding: 20px;
+        /* border-radius: 18px; */
+        margin-bottom: 9px;
+      
+    }
+    #password{
+        height: 10px;
+        width: 300px;
+        padding: 20px;
+        /* border-radius: 18px; */
+        margin-bottom: 9px;
+    }
+    #conform-password{
+        height: 10px;
+        width: 300px;
+        padding: 20px;
+        /* border-radius: 18px; */
+        margin-bottom:20px;
+    }
+  form #email:hover{
+    background-color: aqua;
+  }
+  form #password:hover{
+    background-color: aqua;
+  }
+  form #conform-password:hover{
+    background-color: aqua;
+  }
+  form h3{
+    font-size:30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+form #username::after{
+        /* content:url(assets/R.png); */
+    }
+    button{
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        height: 10px;
+        width: 130px;
+        padding: 25px;
+        border-radius: 18px;
+        margin-bottom: 5px;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+        background-color: rgba(233, 199, 7, 0.975);
+        cursor: pointer;
+    }
+    .calender{
+        height: 300px;
+        display: grid;
+        grid-template-columns:repeat(7, 1fr );
+        row-gap: 10px ;
+        column-gap: 20px;
+        /* border: solid; */
+        padding: 40px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .date{
+        background-color: antiquewhite;
+        height: 40px;
+        width: 30px;
+       border-radius: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="a-page">
+         <a href="">Home</a>
+         <a href="">Profile</a>
+         <a href="">About</a>
+         <a href="">Blog</a>
+        </div>
+        <div class="header-loging-and-sign-up">
+            <a href="loging_form.html">Loging</a>
+            <a href="">Sign in</a>
+        </div>
+         
+     </nav>
+   </header>
+   <main>
+    <section class=" box login-page">
+       <!-- <form>
+        <h3>Create your first Acount.</h3>
+            <a href=""> <input class="username" type="button" name="" id="" value="Continue with Google"></a>
+            <p> OR</p>
+            <input placeholder="Email address" type="email" name="" id="email">
+            <input placeholder="Password" type="password" name="" id="password">
+            <input placeholder="conform-password" type="password" name="" id="conform-password">
+            <button>SIGN UP</button>
+           
+       </form>  -->
+       <div class="calender-container">
+            <h1>Calender</h1>
+            <div class="calender">
+                <div class="date">29</div>
+                <div class="date">30</div>
+                <div class="date">31</div>
+               <div class="date">1</div>
+               <div class="date">2</div>
+               <div class="date">3</div>
+               <div class="date">4</div>
+               <div class="date">5</div>
+               <div class="date">6</div>
+               <div class="date">7</div>
+               <div class="date">8</div>
+               <div class="date">9</div>
+               <div class="date">10</div>
+               <div class="date">11</div>
+               <div class="date">12</div>
+               <div class="date">13</div>
+               <div class="date">14</div>
+               <div class="date">15</div>
+               <div class="date">16</div>
+               <div class="date">17</div>
+               <div class="date">18</div>
+               <div class="date">19</div>
+               <div class="date">20</div>
+               <div class="date">21</div>
+               <div class="date">22</div>
+               <div class="date">23</div>
+               <div class="date">24</div>
+               <div class="date">25</div>
+               <div class="date">26</div>
+               <div class="date">27</div>
+               <div class="date">28</div>
+               <div class="date">29</div>
+               <div class="date">30</div>
+               <div class="date">1</div>
+               <div class="date">2</div>
+              
+            </div>
+       </div>
+    </section>
+   </main>
+</body>
+</html>
