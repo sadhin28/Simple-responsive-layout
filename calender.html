@@ -54,17 +54,7 @@
         flex-wrap: wrap;
         border: none;
      }
-    .calender-container{
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        top: 0%;
-        align-items: center;
-        
-       
-    }
+ 
     main{
        
         display: flex;
@@ -148,26 +138,58 @@ form #username::after{
         background-color: rgba(233, 199, 7, 0.975);
         cursor: pointer;
     }
+    .calender-container{
+       
+       /* justify-content: space-around;
+       align-items: center;
+      */
+       
+       padding: 13px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       position: relative;
+       top: 0%;
+       align-items: center;
+       
+      
+   }
     .calender{
-        height: 300px;
+        background-color: aliceblue;
+        /* height: 300px; */
+        padding: 20px;
         display: grid;
         grid-template-columns:repeat(7, 1fr );
         row-gap: 10px ;
         column-gap: 20px;
         /* border: solid; */
         padding: 40px;
+        border-radius: 30px;
         align-items: center;
         justify-content: center;
 
     }
     .date{
-        background-color: antiquewhite;
+        background-color: rgb(38, 207, 128);
         height: 40px;
         width: 30px;
        border-radius: 50px;
        display: flex;
        align-items: center;
        justify-content: center;
+       font-size: 1em;
+       font-weight: 500;
+    }
+    .day{
+        background-color: rgb(240, 136, 0);
+        height: 50px;
+        width: 30px;
+       border-radius: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 1em;
+       font-weight: 500;
     }
     </style>
 </head>
@@ -202,6 +224,13 @@ form #username::after{
        <div class="calender-container">
             <h1>Calender</h1>
             <div class="calender">
+                <div class="day">S</div>
+                <div class="day">M</div>
+                <div class="day">T</div>
+                <div class="day">W</div>
+                <div class="day">T</div>
+                <div class="day">F</div>
+                <div class="day">S</div>
                 <div class="date">29</div>
                 <div class="date">30</div>
                 <div class="date">31</div>
