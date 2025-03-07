@@ -6,40 +6,108 @@
     <title>Flexbox</title>
     <style>
         .container{
-            height: 150px;
-            display: flex;
-            gap: 40px;
-            flex-direction:row-reverse;
-            justify-content:space-evenly;
-            align-items:center;
-           
-            border: 2px solid salmon;
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+            padding: 4px;
+            margin: 4px;
+            gap: 10px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          
         }
         .box{
+           
+           
+            border-radius: 180px;
             border: 2px dashed tomato;
-            width: 50px;
-            height: 50px;
+            width: 100%;
+           
+            
+          
         }
+        img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 50%;
+        }
+        @media screen and (max-width:576px) {
+       
+                .box img{
+                   width: 100%;
+                   flex-wrap: wrap;
+                   
+                   justify-content: center;
+                   align-items: center;
+                }
+        }
+        @media screen and (min-width:576px) and (max-width:976px) {
+       
+                .box img{
+                   width: 100%;
+                   flex-wrap: wrap;
+                   
+                   justify-content: center;
+                   align-items: center;
+                }
+        }
+        .navigaton{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            border: black solid;
+            /* margin: o auto; */
+            column-gap: 60px;
+            padding: 10px;
+            justify-content:center;
+            
+        }
+        
+        .login-signin{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: o auto;
+            column-gap: 60px;
+            padding: 10px;
+            justify-content:center;
+        }
+        .navigaton a, .login-signin  a{
+            background-color: rgb(255, 250, 249);
+            font-size: 20px;
+           padding: 10px;
+           text-decoration: none;
+           /* height: 12px; */
+           align-items: center;
+           justify-content: center;
+           justify-items: center;
+           border-radius: 10px;
+        }
+
     </style>
 </head>
 <body>
+    <nav class="navigaton">
+        <a href="">Hone</a>
+        <a href="">Aducaton</a>
+        <a href="">About us</a>
+        <a href="">Contact me</a>
+        <div class="login-signin">
+            <a href="">Sign-in</a>
+            <a href="">Log-in</a>
+        </div>
+    </nav>
     <h1>Flexbox Layout</h1>
     <div class="container">
-        <div class="box">Box-1</div>
-        <div class="box">Box-2</div>
-        <div class="box">Box-3</div>
-        <div class="box">Box-4</div>
-        <div class="box">Box-5</div>
-        <div class="box">Box-6</div>
-        <div class="box">Box-7</div>
-        <div class="box">Box-8</div>
-        <div class="box">Box-9</div>
-        <div class="box">Box-10</div>
-        <div class="box">Box-11</div>
-        <div class="box">Box-7</div>
-        <div class="box">Box-8</div>
-        <div class="box">Box-9</div>
-        <div class="box">Box-10</div>
+        <div class="box">
+            <img src="assets/R.png" alt="">
+        </div>
+       
     </div>
 </body>
 </html>
