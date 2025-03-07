@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        body{
+            max-width: 1140px;
+            margin: 0 auto;
+            border:black 2px solid;
+        }
+        .div1{
+            display:flex;
+            /* padding: 10px; */
+            gap: 10px;
+            
+        }
+        
+        .div3{
+            display:flex;
+        }
+        .conteiner1{
+            height: 400px;
+            width: 400px;
+            border: 7px  rebeccapurple solid;
+        }
+        .conteiner2{
+            height: 200px;
+            width: 400px;
+            border:7px rgb(189, 139, 11) solid;
+        }
+        .conteiner3{
+            height: 200px;
+            width: 200px;
+            border:7px rgb(219, 12, 205) solid;
+        }
+        .conteiner4{
+            height: 200px;
+            width: 200px;
+            border:7px rgb(120, 117, 126) solid;
+        }
+        
+        @media screen and (max-width:576px){
+            .div1{
+                 width: 100%;
+                display:grid;
+                 justify-items: center;
+                grid-template-columns: repeat(1, 1fr);
+                
+            }
+            .div3{
+                 
+                 
+                display:grid;
+                grid-template-columns: repeat(1, 1fr);
+                
+            }
+            .conteiner3{
+                width:400px;
+                 height: 400px;
+            }
+            .conteiner4{
+                width:400px;
+                 height: 400px;
+            }
+            .conteiner2{
+                width:400px;
+                 height: 400px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="div1">
+            <div class="conteiner1">1</div>
+        
+        <div class="div2">
+            <div class="conteiner2">2</div>
+           <div class="div3">
+            <div class="conteiner3">3</div>
+            <div class="conteiner4">4</div>
+           </div>
+        </div>
+    </div>
+    </div>
+   
+   
+</body>
+</html>
