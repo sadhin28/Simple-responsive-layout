@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapt image</title>
+    <style>
+        body{
+            max-width: 1140px;
+            margin: 0 auto;
+            border: 2px black solid;
+        }
+        .image img{
+          width: 100%;
+         
+        }
+        h1{
+            font-size: 3em;
+            text-align: center;
+        }
+        .div1{
+            max-width: 1140px;
+            border: 1px black solid;
+            display:flex;
+            gap: 20px;
+
+        }
+        .div2{
+           
+            width: 80%;
+            border: 1px red solid;
+            margin: 0 auto;
+            /* background-image:url(/assets/pizza.jpg);
+            background-size: contain;
+            background-repeat: no-repeat; */
+        }
+        .div3{
+            margin: 0 auto;
+            width: 80%;
+            border: 1px red solid;
+            
+            /* background-image:url(/assets/pizza.jpg);
+            background-size: contain;
+            background-repeat: no-repeat; */
+        }
+        .div2 img{
+            margin: 0 auto;
+            width: 80%;
+        }
+        @media screen and (max-width:576px){
+            .div1{
+                 display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+        }
+        .div3 p{
+            width: 80%;
+            font-size:1.5em ;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adapt images for different devices</h1>
+    <div class="container">
+        <div class="image">
+        
+            <img src="assets/WhatsApp Image 2024-12-31 at 18.37.20_95d297cb.jpg" alt="">
+
+        </div>
+    </div>
+
+    <div class="div1">
+        <div class="div2">
+           <img src="assets/pizza.jpg" alt="">
+         </div>
+        <div class="div3">
+          <h2>PIZZA</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Exercitationem modi sint quia minus quos omnis impedit natus enim? Quibusdam, rerum!</p>
+             <a href="">Read more</a>
+        </div>
+    </div>
+</body>
+</html>
